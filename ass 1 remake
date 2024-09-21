@@ -1,0 +1,167 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fa091778-a2e2-4f12-a0e8-3b467693ec4e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4865723e-3e36-4404-9bfe-a5f6c4644344",
+   "metadata": {},
+   "source": [
+    "##assignment 1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1723fee6-a38e-40ac-b840-fcbc2126e027",
+   "metadata": {},
+   "source": [
+    "#question 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "89375ec5-0fc8-4de8-90d6-ac21667717e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def vectorlength(x, y): \n",
+    "    length = np.sqrt((x**2) + (y**2))\n",
+    "    return length\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "1641ee2e-0a82-4bf6-b13a-e97808e19888",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7.810249675906654\n"
+     ]
+    }
+   ],
+   "source": [
+    "length_1 = vectorlength(5, 6)\n",
+    "print(length_1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "90299bcc-ee8e-40bf-819e-7fcc0ec64f8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5.0990195135927845\n"
+     ]
+    }
+   ],
+   "source": [
+    "length_2 = vectorlength(-1, 5)\n",
+    "print(length_2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "1dbc7682-c95e-4bcc-869f-1c692cc6b47c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sin(1)= 0.841\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"sin(1)= %.3f\" % np.sin(1))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f885fda0-f80d-4046-92d4-4521cb5b147d",
+   "metadata": {},
+   "source": [
+    "#to test for primes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "4d3094ca-3298-4ad6-8505-22fb5ed0caaa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 123,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def IsPrime(n):\n",
+    "    if n==1:\n",
+    "        return 0\n",
+    "    i = 2\n",
+    "    while i <= np.sqrt(n):\n",
+    "        if n % i == 0:\n",
+    "            return 0\n",
+    "        i += 1\n",
+    "    return 1\n",
+    "\n",
+    "IsPrime(8)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4ce858a1-ce06-4fa7-aeea-51672a905f1c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
